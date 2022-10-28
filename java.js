@@ -152,7 +152,7 @@
 
 //-- Det jeg sluttet med og det virket- Credit Deniz
 
-              /* fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json')
+             /*  fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json')
                    .then(response => response.json())
                    .then (Movies => {
                        console.log(Movies)
@@ -187,7 +187,9 @@
                        }
                    });
 
-               */
+              */
+
+
 
 
    //Exercise 5 level 2
@@ -197,9 +199,9 @@
        .then (Movies => {
            console.log(Movies)
 
-               const button = document.querySelector("#M2014").addEventListener("click", function(){
-                   for (let i = 0; i < Movies.year[2014] ; i++) {
-                           if (Movies.year <= 2014) {
+               const button = document.querySelector("#Movies").addEventListener("click", function(){
+                   for (let i = 0; i < Movies.length ; i++) {
+                           if (Movies[i].year <= 2014) {
 
 
                            const Movies2014 = Movies[i].title
@@ -214,4 +216,3 @@
        });
 
        })
-//tjek tjek
